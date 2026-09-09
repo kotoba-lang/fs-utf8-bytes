@@ -5,7 +5,8 @@
   here is the DEFINITION, and this repo's deps.edn names exactly the
   definitions it reaches -- nothing else.
 "
-  )
+  #?(:clj  (:require [kotoba.lang.text :as str])
+     :cljs (:require [kotoba.lang.text :as str])))
 
 (defn utf8-bytes
   "UTF-8 encode `text` into a vector of unsigned bytes (0-255)."
